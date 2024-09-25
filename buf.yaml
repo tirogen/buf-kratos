@@ -1,0 +1,12 @@
+version: v2
+modules:
+  - name: buf.build/tirogen/kratos
+    path: .
+lint:
+  use:
+    - STANDARD
+  except:
+    - PACKAGE_VERSION_SUFFIX
+breaking:
+  use:
+    - FILE
